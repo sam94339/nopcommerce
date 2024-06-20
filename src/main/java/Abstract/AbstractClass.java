@@ -1,9 +1,15 @@
 package Abstract;
 
+import java.time.Duration;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AbstractClass {
 	
@@ -14,6 +20,9 @@ public class AbstractClass {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 	
 	//Top Header Elements
 	
@@ -27,6 +36,7 @@ public class AbstractClass {
 	WebElement wishlist;
 	
 	@FindBy(xpath = "//span[contains(text(),'Shopping cart')]")
+	protected
 	WebElement cart;
 	
 	@FindBy(id = "customerCurrency")
@@ -38,6 +48,7 @@ public class AbstractClass {
 	WebElement logo;
 	
 	@FindBy(xpath = "//input[@placeholder = 'Search store']")
+	protected
 	WebElement searchfield;
 	
 	@FindBy(xpath = "//button[contains(text(),'Search')]")
@@ -101,5 +112,28 @@ public class AbstractClass {
 	//7th
 	@FindBy(xpath = "//ul[@class = 'top-menu notmobile']/li[7]")
 	WebElement GiftCard;
+	
+	//Popumessage cross button
+	@FindBy(css = ".close")
+	public
+	WebElement crossbutton;
+	
+	//Popupmessage
+	@FindBy(id = "bar-notification")
+	public
+	WebElement ntfbar;
+	
+	
+	
+	public void explicitwait(WebElement element) {
+		
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	public void actonmethod(WebElement ele) {
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(ele).perform();
+	}
 
 }

@@ -18,8 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	
-	WebDriver driver;
-	LandinPage landingpage;
+	public WebDriver driver;
+	public LandinPage landingpage;
 	
 	public WebDriver initialization() throws IOException {
 		
@@ -55,13 +55,13 @@ public class BaseClass {
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		return driver;
 	}
 	
 	@BeforeMethod(alwaysRun = true)
-	public LandinPage gotoLandingpage() throws IOException {
+	public LandinPage gotoLandingpage() throws IOException{
 		
 		driver = initialization();
 		landingpage = new LandinPage(driver);
