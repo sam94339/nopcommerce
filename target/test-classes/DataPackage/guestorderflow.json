@@ -1,0 +1,39 @@
+[
+	{
+		"fname": "Deep",
+		"lname": "Ghosh",
+		"email": "soumyadeep@yopmail.com",
+		"country": "India",
+		"city": "Kolkata",
+		"Address1": "Maniktala",
+		"Zip": "700005",
+		"phn": "1234567890",
+		"shippingmethod": "Next Day Air ($0.00)",
+		"paymentmethod": "Credit Card",
+		"cardtype": "Amex",
+		"holdername": "Test User",
+		"card number": "378282246310005",
+		"month": "02",
+		"year": "2026",
+		"cvv": "133"
+	},
+	
+	{
+		"fname": "Abc",
+		"lname": "Test",
+		"email": "testsoumya@yopmail.com",
+		"country": "India",
+		"city": "Bangalor",
+		"Address1": "AbcD",
+		"Zip": "123467",
+		"phn": "2345633789",
+		"shippingmethod": "2nd Day Air ($0.00)",
+		"paymentmethod": "Check / Money Order",
+		"cardtype": "",
+		"holdername": "",
+		"card number": "",
+		"month": "",
+		"year": "",
+		"cvv": ""
+	}
+]

@@ -19,7 +19,7 @@ public class CartPageTest extends BaseClass{
 	public void addtocartsccsmsgchecking() throws InterruptedException {
 		
 		lndpg = new LandinPage(driver);
-		Assert.assertEquals(lndpg.addtocartprocess(), "The product has been added to your shopping cart");
+		Assert.assertEquals(lndpg.addtocartprocess(), "The product has been added to your shopping cart 123");
 		
 	}
 	

@@ -85,6 +85,9 @@ public class LandinPage extends AbstractClass{
 	
 	public String sndcnttxt() {
 		
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("window.scrollBy(0, 500)");
+		
 		String sndcnt = sndcontent.getText();
 		return sndcnt;
 	}

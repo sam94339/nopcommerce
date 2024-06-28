@@ -22,12 +22,11 @@ public class CheckoutLoginPage extends AbstractClass{
 	@FindBy(css = ".button-1.checkout-as-guest-button")
 	WebElement guestbtn;
 	
-	public void guestbtnclck() {
+	public CheckoutPage guestbtnclck() {
 		
 		guestbtn.click();
+		CheckoutPage checkoutpgobj = new CheckoutPage(driver);
+		return checkoutpgobj;
 		
 	}
-	
-	
-
 }
