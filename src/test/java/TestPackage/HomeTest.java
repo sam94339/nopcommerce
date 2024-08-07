@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import BasePackage.BaseClass;
+import BasePackage.Retry;
 import Pages.LandinPage;
 
 public class HomeTest extends BaseClass{
@@ -26,15 +27,15 @@ public class HomeTest extends BaseClass{
 		
 		landingpageobj = new LandinPage(driver);
 		Assert.assertEquals(landingpageobj.fstheadingtext(), "Welcome to our store");
-		Assert.assertEquals(landingpageobj.sndhndttxt(), "Featured products");
+		Assert.assertEquals(landingpageobj.sndhndttxt(), "Featured products Test");
 	}
 	
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void homecontent() {
 		
 		landingpageobj = new LandinPage(driver);
 		Assert.assertEquals(landingpageobj.fstcnttxt(), "Online shopping is the process consumers go through to purchase products or services over the Internet. You can edit this in the admin site.");
-		Assert.assertEquals(landingpageobj.sndcnttxt(), "If you have questions, see the Documentation, or post in the Forums at nopCommerce.com tt");
+		Assert.assertEquals(landingpageobj.sndcnttxt(), "If you have questions, see the Documentation, or post in the Forums at nopCommerce.com");
 	}
 
 }

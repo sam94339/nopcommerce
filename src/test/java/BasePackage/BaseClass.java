@@ -38,7 +38,7 @@ public class BaseClass {
 		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\DataPackage\\getdata.properties");
 		pop.load(file);
 		
-		String browsername = pop.getProperty("browser");
+		String browsername = System.getProperty("browser") != null ? System.getProperty("browser"): pop.getProperty("browser");
 		
 		if(browsername.contains("chrome")) {
 			

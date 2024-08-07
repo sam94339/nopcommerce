@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-06T14:34:54 IST" name="Suite" finished-at="2024-08-06T14:35:35 IST" duration-ms="40912">
+    <groups>
+      <group name="Group2">
+        <method signature="HomeTest.categorylinkTest()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" name="categorylinkTest" class="TestPackage.HomeTest"/>
+      </group> <!-- Group2 -->
+    </groups>
+    <test started-at="2024-08-06T14:34:54 IST" name="Home Page Test" finished-at="2024-08-06T14:35:35 IST" duration-ms="40912">
+      <class name="TestPackage.HomeTest">
+        <test-method is-config="true" signature="gotoLandingpage()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:34:54 IST" name="gotoLandingpage" finished-at="2024-08-06T14:35:06 IST" duration-ms="11467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLandingpage -->
+        <test-method signature="categorylinkTest()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:06 IST" name="categorylinkTest" finished-at="2024-08-06T14:35:07 IST" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categorylinkTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:07 IST" name="closeBrowser" finished-at="2024-08-06T14:35:10 IST" duration-ms="2999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="gotoLandingpage()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:10 IST" name="gotoLandingpage" finished-at="2024-08-06T14:35:18 IST" duration-ms="8467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLandingpage -->
+        <test-method signature="heading()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:18 IST" name="heading" finished-at="2024-08-06T14:35:19 IST" duration-ms="1042" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Featured products Test] but found [Featured products]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Featured products Test] but found [Featured products]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at TestPackage.HomeTest.heading(HomeTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- heading -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:20 IST" name="closeBrowser" finished-at="2024-08-06T14:35:23 IST" duration-ms="3718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="gotoLandingpage()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:23 IST" name="gotoLandingpage" finished-at="2024-08-06T14:35:31 IST" duration-ms="7781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLandingpage -->
+        <test-method signature="homecontent()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:31 IST" name="homecontent" finished-at="2024-08-06T14:35:32 IST" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homecontent -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestPackage.HomeTest@35dab4eb]" started-at="2024-08-06T14:35:32 IST" name="closeBrowser" finished-at="2024-08-06T14:35:35 IST" duration-ms="3296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestPackage.HomeTest -->
+    </test> <!-- Home Page Test -->
+  </suite> <!-- Suite -->
+</testng-results>
