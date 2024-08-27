@@ -1,0 +1,9 @@
+# Created at 2024-08-12T13:14:29.673
+WebDriver session does not exist, or is not active
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a65b25a4-60c6-4c2c-852e-54db63e413b1, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0, moz:accessibilityChecks: false, moz:buildID: 20240801122119, moz:debuggerAddress: 127.0.0.1:18229, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7716, moz:profile: C:\Users\CODECL~2\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:18229/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a65b25a4-60c6-4c2c-852e-54db63e413b1
+

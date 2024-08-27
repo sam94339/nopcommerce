@@ -103,7 +103,7 @@
   
   <profiles>
 	  <profile>
-		  <id>Testngtest</id>
+		  <id>ListenerTest</id>
 		  <build>
 		  <pluginManagement>
 		  <plugins>
@@ -121,6 +121,47 @@
 		</pluginManagement>
 		</build>
 	  </profile>
+	  
+	  <profile>
+		  <id>ParallamethodTest</id>
+		  <build>
+		  <pluginManagement>
+		  <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>3.3.1</version>
+	        <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>TestSuite/parallalmethodruns.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+	      </plugin>
+		</plugins>
+		</pluginManagement>
+		</build>
+	  </profile>
+	  
+	  <profile>
+		  <id>ParallalrunTest</id>
+		  <build>
+		  <pluginManagement>
+		  <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>3.3.1</version>
+	        <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>TestSuite/parallalrun.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+	      </plugin>
+		</plugins>
+		</pluginManagement>
+		</build>
+	  </profile>
+	  
   </profiles>
   
 </project>

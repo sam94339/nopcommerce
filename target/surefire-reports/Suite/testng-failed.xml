@@ -11,6 +11,8 @@
           <include name="heading"/>
           <include name="gotoLandingpage"/>
           <include name="closeBrowser"/>
+          <include name="categorylinkTest"/>
+          <include name="homecontent"/>
         </methods>
       </class> <!-- TestPackage.HomeTest -->
     </classes>

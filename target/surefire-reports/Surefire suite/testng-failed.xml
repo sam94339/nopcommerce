@@ -12,8 +12,10 @@
       </class> <!-- TestPackage.CartPageTest -->
       <class name="TestPackage.HomeTest">
         <methods>
+          <include name="heading"/>
           <include name="gotoLandingpage"/>
           <include name="closeBrowser"/>
+          <include name="categorylinkTest"/>
           <include name="homecontent"/>
         </methods>
       </class> <!-- TestPackage.HomeTest -->
